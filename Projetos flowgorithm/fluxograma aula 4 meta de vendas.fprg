@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-28 09:01:35 "/>
+        <attribute name="created" value="bWFyaWE7TEFQVE9QLTEyRkRLRklBOzIwMjItMDQtMjI7IjA3OjIyOjI5ICI7Mjc0Mg=="/>
+        <attribute name="edited" value="bWFyaWE7TEFQVE9QLTEyRkRLRklBOzIwMjItMDQtMjg7IjA5OjAxOjM1ICI7MTA7MjkwMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jan, fev, mar, abr, media" type="Real" array="False" size=""/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="sobrenome" type="String" array="False" size=""/>
+            <output expression="&quot; Qual seu nome? &quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Qual seu sobrenome?&quot;" newline="True"/>
+            <input variable="sobrenome"/>
+            <output expression="nome &amp; &quot; Informe suas vendas de Jan/22 &quot;" newline="True"/>
+            <input variable="jan"/>
+            <output expression="&quot; informe suas vendas de Fev/22&quot;" newline="True"/>
+            <input variable="fev"/>
+            <output expression="&quot; Informe suas vendas de Mar/22 &quot;" newline="True"/>
+            <input variable="mar"/>
+            <output expression="&quot; informe suas vendas de Abr/22 &quot;" newline="True"/>
+            <input variable="abr"/>
+            <assign variable="media" expression="(jan+fev+mar+abr)/4"/>
+            <output expression="&quot; Sua media &#233; de: &quot; &amp; media" newline="True"/>
+            <if expression="media&gt;=20">
+                <then>
+                    <output expression="&quot; Parab&#233;ns: &quot; &amp;nome &amp; sobrenome&amp; &quot;  Voc&#234; bateu sua meta!  &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="nome  &amp; sobrenome &amp; &quot;  Voc&#234; n&#227;o bateu sua meta.  &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

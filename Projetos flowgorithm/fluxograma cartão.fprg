@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-22 07:13:58 "/>
+        <attribute name="created" value="bWFyaWE7TEFQVE9QLTEyRkRLRklBOzIwMjItMDQtMjI7IjA3OjAxOjI2ICI7MjczNg=="/>
+        <attribute name="edited" value="bWFyaWE7TEFQVE9QLTEyRkRLRklBOzIwMjItMDQtMjI7IjA3OjEzOjU4ICI7MTsyODUy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cliente" type="String" array="False" size=""/>
+            <declare name="cart&#227;o" type="Boolean" array="False" size=""/>
+            <declare name="numero" type="String" array="False" size=""/>
+            <input variable="cliente"/>
+            <input variable="cart&#227;o"/>
+            <if expression="cart&#227;o">
+                <then>
+                    <input variable="numero"/>
+                </then>
+                <else>
+                    <output expression="&quot;s&#243; cart&#227;o!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
